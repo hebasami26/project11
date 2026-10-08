@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  background: #12202f;
+  color: #f5f1e8;
+  text-align: center;
+}
+
+h1 {
+  padding: 50px 0 30px;
+  font-size: 3rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 60px;
+}
+
+/* الكارت: يرتفع ويكبر */
+.card {
+  width: 260px;
+  padding: 30px 24px;
+  background: #1c3148;
+  border-radius: 18px;
+  transition: transform 0.4s;
+}
+ .card:hover {
+  transform: translateY(-12px) scale(1.05) rotate(0);
+} 
+
+.card h2 {
+  margin: 14px 0 8px;
+}
+
+.card p {
+  margin-bottom: 20px;
+}
+
+/* الأيقونة: كل واحدة بحركة مختلفة */
+.card .icon-web,
+.card .icon-design,
+.card .icon-app {
+  display: inline-block;
+  font-size: 80px;
+  transition: transform 0.5s;
+}
+
+.card:hover .icon-web {
+  transform: rotate(180deg);
+}
+
+.card:hover .icon-design {
+  transform: scale(1.4) rotate(-20deg);
+}
+
+.card:hover .icon-app {
+  transform: translateY(-10px) rotate(12deg);
+}
+
+/* الزرار: يكبر ويميل */
+.btn {
+  display: inline-block;
+  padding: 10px 26px;
+  background: #f4a259;
+  color: #12202f;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1) rotate(-3deg);
+}
